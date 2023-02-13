@@ -25,7 +25,7 @@
 Patrick Rael</p>
 <p><small>coded by</small><br>
 Pedro Fontoura</p>
-<p class="small">2023-0212-2011</p>
+<p class="small">2023-0213-1825</p>
 </div>
 </section>
 <section id="Play" class="AppPage">
@@ -33,10 +33,16 @@ Pedro Fontoura</p>
 <div id="Stats">
 <header>Stats:</header>
 <p>Round: <span id="txt_trick"></span></p>
+</div>
+<div id="StatsBot" class="Stats">
+<div id="xBot"></div>
 <header>Bot:</header>
 <p>Win: <span id="txt_bot_winClean"></span> / <span id="txt_bot_winAll"></span></p>
 <p>Hearts: <span id="txt_bot_hearts" class="hearts"></span></p>
 <p>Score: <span id="txt_bot_score"></span></p>
+</div>
+<div id="StatsPlayer" class="Stats">
+<div id="xPlayer"></div>
 <header>Player:</header>
 <p>Win: <span id="txt_player_winClean"></span> / <span id="txt_player_winAll"></span></p>
 <p>Hearts: <span id="txt_player_hearts" class="hearts"></span></p>
@@ -49,10 +55,10 @@ Pedro Fontoura</p>
 <h2>A solitaire version of Hearts.</h2>
 <p>Designed for the 2022 Traditional Deck Game Design Contest.</p>
 <p>In this solitaire version of Hearts, you will play against the game (<i>The Bot</i>), with the same basic objectives: win tricks, but avoid those with hearts (or the queen of spades*) in them, which carry negative points.</p>
-<div><img src="icons/bgg-primary-logo-reverse.svg">
+<div><img alt="" src="icons/bgg-primary-logo-reverse.svg">
 <ul>
-<li><a target="_blanc" href="https://boardgamegeek.com/thread/2944079/wip-lonely-hearts-solitaire-version-hearts-traditi">Game page</a></li>
-<li><a target="_blanc" href="https://boardgamegeek.com/blog/12171/digital-web-versions-games">Other solitaires</a></li>
+<li><a target="_blank" href="https://boardgamegeek.com/thread/2944079/wip-lonely-hearts-solitaire-version-hearts-traditi">Game page</a></li>
+<li><a target="_blank" href="https://boardgamegeek.com/blog/12171/digital-web-versions-games">Other solitaires</a></li>
 </ul>
 </div>
 </section>
@@ -60,31 +66,35 @@ Pedro Fontoura</p>
 <h1>Help</h1>
 </section>
 <section id="Options" class="AppPage">
+<div class="PageColumn">
 <h1>Options</h1>
-<p>Should the Bot play the 3 cards without user interaction?</p>
+<p>Should the <i>Bot</i> play without user interaction?</p>
 <input type="radio" id="option_autoplay_0" name="option_autoplay" value="0"> <label for="option_autoplay_0">No, click the trick row to make the bot play a card.</label><br>
 <input type="radio" id="option_autoplay_1" name="option_autoplay" value="1"> <label for="option_autoplay_1">Yes, click the trick row to evaluate the trick.</label>
-<p>Should the Bot try to win tricks containing hearts?</p>
+<p>Should the <i>Bot</i> try to win tricks containing hearts?</p>
 <input type="radio" id="option_winhearts_1" name="option_winhearts" value="1"> <label for="option_autoplay_1">Yes (default).</label><br>
 <input type="radio" id="option_winhearts_0" name="option_winhearts" value="0"> <label for="option_winhearts_0">No, make the challenge a bit more hard.</label>
 <p>The <i>Queen of Spades</i> is a special card?</p>
 <input type="radio" id="option_qos_1" name="option_qos" value="1"> <label for="option_qos_1">Yes (default).</label><br>
-<input type="radio" id="option_qos_0" name="option_qos" value="0"> <label for="option_qos_0">No, all Queens were made equal.</label></section>
+<input type="radio" id="option_qos_0" name="option_qos" value="0"> <label for="option_qos_0">No, all Queens were made equal.</label></div>
+<div class="PageColumn"><button id="btnFullScreen">Full screen</button></div>
+</section>
 <section id="Error" class="AppPage">
 <h1>This is embarassing...</h1>
-<p>Please, send me a screen capture or the text below so that i can adress the situation. Thank you!</p>
+<p class="bold">Please, send me a screen capture or the text below so that i can adress the situation. Thank you!</p>
+<p id="UserAgent"></p>
 <div id="AppError"></div>
 </section>
-<section id="Rotate" class="AppPage"><img src="icons/rotate-svgrepo-com.svg">
+<section id="Rotate" class="AppPage"><img alt="" src="icons/rotate-svgrepo-com.svg">
 <p>Rotate you device to landscape.</p>
 </section>
-<div id="MenuIcon" class="Hidden"><img src="icons/menu-svgrepo-com.svg"></div>
+<div id="MenuIcon" class="Hidden"><img alt="" src="icons/menu-svgrepo-com.svg"></div>
 <div id="MenuPannel">
-<p id="Menu_Home"><img src="icons/home-svgrepo-com.svg"></p>
-<p id="Menu_Play"><img src="icons/play-button-svgrepo-com.svg"></p>
-<p id="Menu_Info"><img src="icons/info-svgrepo-com.svg"></p>
-<p id="Menu_Help"><img src="icons/help-svgrepo-com.svg"></p>
-<p id="Menu_Options"><img src="icons/options-svgrepo-com.svg"></p>
+<p id="Menu_Home"><img alt="" src="icons/home-svgrepo-com.svg"></p>
+<p id="Menu_Play"><img alt="" src="icons/play-button-svgrepo-com.svg"></p>
+<p id="Menu_Info"><img alt="" src="icons/info-svgrepo-com.svg"></p>
+<p id="Menu_Help"><img alt="" src="icons/help-svgrepo-com.svg"></p>
+<p id="Menu_Options"><img alt="" src="icons/options-svgrepo-com.svg"></p>
 </div>
 </section>
 </section>
