@@ -4,8 +4,8 @@
     "description": "Solitaire card game played with a standard 52 card deck",
     "icons": [
         {
-            "src": "",
-            "sizes": "",
+            "src": "icons/lonely-hearts.png",
+            "sizes": "512x512",
             "type": "image/png"
         }
     ],
