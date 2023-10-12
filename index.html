@@ -26,7 +26,7 @@
 Patrick Rael</p>
 <p><small>coded by</small><br>
 Pedro Fontoura</p>
-<p class="small">2023-1010-1641</p>
+<p class="small">2023-1012-1256</p>
 </div>
 </section>
 <section id="Play" class="AppPage">
@@ -79,6 +79,23 @@ Pedro Fontoura</p>
 <input type="radio" id="option_qos_0" name="option_qos" value="0"> <label for="option_qos_0">No, all queens were made equal.</label></div>
 <div class="PageColumn"><button id="btnFullScreen">Full screen</button></div>
 </section>
+<section id="GameStats" class="AppPage">
+<div class="GameStatsColumn">
+<h1>Stats</h1>
+<h2>Games</h2>
+<p>Finished: <span id="txt_stats_finished"></span></p>
+<p>Won: <span id="txt_stats_won"></span></p>
+<p>Win ratio: <span id="txt_stats_winratio"></span></p>
+</div>
+<div class="GameStatsColumn">
+<h2>Latest scores</h2>
+<div id="lst_latest_scores"></div>
+</div>
+<div class="GameStatsColumn">
+<h2>Best scores</h2>
+<div id="lst_best_scores"></div>
+</div>
+</section>
 <section id="Error" class="AppPage">
 <h1>This is embarassing...</h1>
 <p class="bold">Please, send me a screen capture or the text below so that i can adress the situation. Thank you!</p>
@@ -94,6 +111,7 @@ Pedro Fontoura</p>
 <p id="Menu_Play"><img alt="" src="icons/play-button-svgrepo-com.svg"></p>
 <p id="Menu_Info"><img alt="" src="icons/info-svgrepo-com.svg"></p>
 <p id="Menu_Options"><img alt="" src="icons/options-svgrepo-com.svg"></p>
+<p id="Menu_GameStats"><img alt="" src="icons/stats-svgrepo-com.svg"></p>
 </div>
 </section>
 </section>
